@@ -4,6 +4,9 @@ module Geoblacklight
   class GeotiffDownload < Geoblacklight::Download
     GEOTIFF_DOWNLOAD_PARAMS = {
       format: "image/geotiff",
+      request: "GetFeature",
+      service: "wfs",
+      version: "2.0.0",
       width: 4096
     }.freeze
 
